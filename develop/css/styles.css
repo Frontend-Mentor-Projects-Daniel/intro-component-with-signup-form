@@ -125,9 +125,15 @@ body {
   height: 100vh;
 }
 
+/* Mobile */
 /* TODO: Move the re-used btn props to a class here */
 /* FIXME: Both buttons have different box shadows */
 /* .btn {} */
+/* FIXME: the <p> tags are bit off */
+
+/* Tablet */
+
+/* Desktop */
 
 /**------------------- 
 **    UTILITIES
@@ -148,12 +154,11 @@ body {
 --------------------*/
 .section-signup {
   display: grid;
-  grid-template-columns: 21.875rem;
-  grid-template-rows: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
-
-  max-width: 375px;
+  grid-template-columns: 19.875rem;
+  grid-template-rows: auto 6.25rem auto;
+  align-items: end;
+  justify-items: stretch;
+  row-gap: 1rem;
 }
 
 /* TEXT CONTENT */
@@ -162,7 +167,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .text-content__title {
@@ -173,6 +178,7 @@ body {
 }
 
 .text-content__text {
+  padding: 0 2rem;
   text-align: center;
 }
 
@@ -243,6 +249,8 @@ body {
 }
 
 .terms-and-services-text {
+  align-self: center;
+
   font-size: 0.75rem;
   text-align: center;
   width: 15.625rem;
