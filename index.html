@@ -58,73 +58,85 @@
           <div class="form-control">
             <label class="sr-only" for="f-name">First Name</label>
             <input
+              data-input
               data-form-first-name
               class="form-signup__first-name"
               id="f-name"
               type="text"
               placeholder="First Name"
-              required
             />
             <img
+              data-error-icon
               class="hidden"
               src="./develop/assets/images/icon-error.svg"
               alt="first name cannot be empty"
             />
-            <span class="hidden">First name cannot be empty</span>
+            <span data-error-text class="hidden"
+              >First name cannot be empty</span
+            >
           </div>
 
           <div class="form-control">
             <label class="sr-only" for="l-name">Last name</label>
             <input
+              data-input
               data-form-last-name
               class="form-signup__last-name"
               id="l-name"
               type="text"
               placeholder="Last Name"
-              required
             />
             <img
+              data-error-icon
               class="hidden"
               src="./develop/assets/images/icon-error.svg"
-              alt="first name cannot be empty"
+              alt="last name cannot be empty"
             />
-            <span class="hidden">First name cannot be empty</span>
+            <span data-error-text class="hidden"
+              >First name cannot be empty</span
+            >
           </div>
 
           <div class="form-control">
             <label class="sr-only" for="email">Email Address</label>
             <input
+              data-input
               data-form-email
               class="form-signup__email"
               id="email"
               type="email"
               placeholder="Email Address"
-              required
             />
             <img
+              data-error-icon
               class="hidden"
               src="./develop/assets/images/icon-error.svg"
-              alt="first name cannot be empty"
+              alt="email doesn't meet minimum requirements"
             />
-            <span class="hidden">First name cannot be empty</span>
+            <span data-error-text class="hidden"
+              >First name cannot be empty</span
+            >
           </div>
 
           <div class="form-control">
             <label class="sr-only" for="password">Password</label>
             <input
+              data-input
               data-form-password
               class="form-signup__password"
               id="password"
               type="password"
               placeholder="password"
-              required
             />
             <img
+              data-error-icon
               class="hidden"
               src="./develop/assets/images/icon-error.svg"
-              alt="first name cannot be empty"
+              alt="password doesn't meet minimum requirements"
             />
-            <span class="hidden">First name cannot be empty</span>
+            <span data-error-text class="hidden"
+              >First name cannot be empty</span
+            >
           </div>
 
           <button data-form-submit class="btn btn--submit">
