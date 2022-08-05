@@ -128,9 +128,19 @@ body {
 
 /* Mobile */
 /* TODO: Move the re-used btn props to a class here */
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(var(--clr-green), 70%);
+}
+
 /* FIXME: Both buttons have different box shadows */
-/* .btn {} */
+
 /* FIXME: the <p> tags are bit off */
+
+/* FIXME: The big purple box cta wasn't a button! */
 
 /* Tablet */
 
@@ -148,6 +158,19 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.error--border {
+  outline: none;
+  border: 2px solid hsl(var(--clr-red)) !important;
+}
+
+.error--text {
+  color: hsl(var(--clr-red)) !important;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /**------------------- 
@@ -279,19 +302,23 @@ body {
   }
 }
 
-.form-signup__first-name input::placeholder,
-.form-signup__last-name input::placeholder,
-.form-signup__email input::placeholder,
-.form-signup__password input::placeholder {
+.form-control {
+  position: relative;
+}
+
+.form-signup__first-name::placeholder,
+.form-signup__last-name::placeholder,
+.form-signup__email::placeholder,
+.form-signup__password::placeholder {
   color: hsl(var(--clr-dark-blue));
   font-size: 14px;
   font-weight: var(--fw-bold);
 }
 
-.form-signup__first-name input,
-.form-signup__last-name input,
-.form-signup__email input,
-.form-signup__password input {
+.form-signup__first-name,
+.form-signup__last-name,
+.form-signup__email,
+.form-signup__password {
   border: 1px solid hsl(var(--clr-grayish-blue));
   border-radius: 5px;
   font-weight: var(--fw-bold);
@@ -299,16 +326,19 @@ body {
   width: 100%;
 }
 
-.form-signup__first-name {
+/* ERROR HANDLING */
+.form-control > img {
+  position: absolute;
+  top: 0.888rem;
+  right: 1.6875rem;
 }
 
-.form-signup__last-name {
-}
-
-.form-signup__email {
-}
-
-.form-signup__password {
+.form-control > span {
+  color: hsl(var(--clr-red));
+  display: inline-block;
+  font-size: 12px;
+  text-align: end;
+  width: 100%;
 }
 
 .btn--submit {

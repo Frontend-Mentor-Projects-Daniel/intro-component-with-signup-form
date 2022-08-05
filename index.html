@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./develop/css/styles.css" />
 
     <!-- Custom JS -->
+    <script src="./develop/js/script.js" defer></script>
 
     <title>Frontend Mentor | Intro component with sign up form</title>
     <style>
@@ -37,8 +38,6 @@
     </style>
   </head>
   <body>
-    <!--    Last Name Email Address Password   -->
-
     <main class="main">
       <section class="section-signup">
         <div class="text-content">
@@ -55,38 +54,82 @@
           then $20/mo. thereafter
         </button>
 
-        <form class="form-signup">
-          <div class="form-signup__first-name">
+        <form class="form-signup" data-form>
+          <div class="form-control">
             <label class="sr-only" for="f-name">First Name</label>
-            <input id="f-name" type="text" placeholder="First Name" required />
+            <input
+              data-form-first-name
+              class="form-signup__first-name"
+              id="f-name"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+            <img
+              class="hidden"
+              src="./develop/assets/images/icon-error.svg"
+              alt="first name cannot be empty"
+            />
+            <span class="hidden">First name cannot be empty</span>
           </div>
 
-          <div class="form-signup__last-name">
+          <div class="form-control">
             <label class="sr-only" for="l-name">Last name</label>
-            <input id="l-name" type="text" placeholder="Last Name" required />
+            <input
+              data-form-last-name
+              class="form-signup__last-name"
+              id="l-name"
+              type="text"
+              placeholder="Last Name"
+              required
+            />
+            <img
+              class="hidden"
+              src="./develop/assets/images/icon-error.svg"
+              alt="first name cannot be empty"
+            />
+            <span class="hidden">First name cannot be empty</span>
           </div>
 
-          <div class="form-signup__email">
+          <div class="form-control">
             <label class="sr-only" for="email">Email Address</label>
             <input
+              data-form-email
+              class="form-signup__email"
               id="email"
               type="email"
               placeholder="Email Address"
               required
             />
+            <img
+              class="hidden"
+              src="./develop/assets/images/icon-error.svg"
+              alt="first name cannot be empty"
+            />
+            <span class="hidden">First name cannot be empty</span>
           </div>
 
-          <div class="form-signup__password">
+          <div class="form-control">
             <label class="sr-only" for="password">Password</label>
             <input
+              data-form-password
+              class="form-signup__password"
               id="password"
               type="password"
               placeholder="password"
               required
             />
+            <img
+              class="hidden"
+              src="./develop/assets/images/icon-error.svg"
+              alt="first name cannot be empty"
+            />
+            <span class="hidden">First name cannot be empty</span>
           </div>
 
-          <button class="btn btn--submit">Claim your free trial</button>
+          <button data-form-submit class="btn btn--submit">
+            Claim your free trial
+          </button>
 
           <div class="terms-and-services-text">
             <p>
