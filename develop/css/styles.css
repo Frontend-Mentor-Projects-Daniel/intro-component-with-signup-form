@@ -123,30 +123,20 @@ body {
   justify-content: center;
 
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Mobile */
 /* TODO: Move the re-used btn props to a class here */
 .btn {
   cursor: pointer;
+  box-shadow: 0px 4px 0px 0px hsl(154, 59%, 42%);
 }
 
 .btn:hover {
   background-color: hsl(var(--clr-green), 70%);
+  box-shadow: 0px 4px 0px 0px hsl(154, 59%, 52%);
 }
-
-/* FIXME: Both buttons have different box shadows */
-
-/* FIXME: the <p> tags are bit off */
-
-/* FIXME: The big purple box cta wasn't a button! */
-
-/* FIXME: The text when writing inside an input is too large! */
-
-/* Tablet */
-
-/* Desktop */
 
 /**------------------- 
 **    UTILITIES
@@ -265,22 +255,23 @@ body {
   }
 }
 
-/* CTA BUTTON */
-.btn--cta {
+/* CTA TEXT */
+.text--cta {
   background-color: hsl(var(--clr-blue));
   border: none;
   border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
   color: hsl(var(--clr-grayish-blue));
   padding: 1rem 3rem;
 }
 
-.btn--cta > span {
+.text--cta > span {
   color: white;
   font-weight: var(--fw-semi-bold);
 }
 
 @media only screen and (min-width: 48em) {
-  .btn--cta {
+  .text--cta {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
@@ -294,6 +285,7 @@ body {
 
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
 }
 
@@ -323,6 +315,7 @@ body {
 .form-signup__password {
   border: 1px solid hsl(var(--clr-grayish-blue));
   border-radius: 5px;
+  font-size: 14px;
   font-weight: var(--fw-bold);
   padding: 0.75rem 0 0.75rem 0.75rem;
   width: 100%;
@@ -339,6 +332,7 @@ body {
   color: hsl(var(--clr-red));
   display: inline-block;
   font-size: 12px;
+  font-style: italic;
   text-align: end;
   width: 100%;
 }
@@ -357,7 +351,7 @@ body {
 
   font-size: 0.75rem;
   text-align: center;
-  width: 15.625rem;
+  min-width: 15.625rem;
 }
 
 .terms-and-services-text > p {
