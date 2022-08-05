@@ -1,6 +1,6 @@
-# Frontend Mentor - this is a sentence
+# Frontend Mentor - Intro Component with Signup Form
 
-![Design preview for the this is a sentence coding challenge](./develop/assets/images/desktop-preview.jpg)
+![Design preview for the Intro Component with Signup Form coding challenge](./develop/assets/images/desktop-preview.jpg)
 
 ## Live Site
 
