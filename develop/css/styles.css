@@ -107,6 +107,7 @@ body {
   background-color: hsl(var(--clr-red));
   background-image: url(../assets/images/bg-intro-mobile.png);
   color: white;
+  font-family: var(--ff-poppins);
   font-size: var(--fs-default);
 }
 
@@ -159,6 +160,25 @@ body {
   align-items: end;
   justify-items: stretch;
   row-gap: 1rem;
+
+  max-width: 95%;
+  padding: 0 1.938rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .section-signup {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+
+    max-width: 69.5rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .section-signup {
+    align-items: center;
+  }
 }
 
 /* TEXT CONTENT */
@@ -170,6 +190,23 @@ body {
   gap: 1.5rem;
 }
 
+@media only screen and (min-width: 48em) {
+  .text-content {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    gap: 1rem;
+
+    padding: 0 1rem;
+    transform: translateY(-53px);
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .text-content {
+    padding: 0 2rem;
+  }
+}
+
 .text-content__title {
   font-size: 2rem;
   font-weight: var(--fw-bold);
@@ -177,9 +214,30 @@ body {
   text-align: center;
 }
 
+@media only screen and (min-width: 48em) {
+  .text-content__title {
+    font-size: 2.625rem;
+    line-height: 1;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .text-content__title {
+    font-size: 3rem;
+  }
+}
+
 .text-content__text {
   padding: 0 2rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .text-content__text {
+    padding: 0;
+    text-align: left;
+  }
 }
 
 /* CTA BUTTON */
@@ -196,6 +254,13 @@ body {
   font-weight: var(--fw-semi-bold);
 }
 
+@media only screen and (min-width: 48em) {
+  .btn--cta {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
 /* FORM */
 .form-signup {
   display: flex;
@@ -205,6 +270,13 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 1.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .form-signup {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
 
 .form-signup__first-name input::placeholder,
